@@ -3218,7 +3218,7 @@ body.cv {
     border-radius: 6px;
   }
   .pdf {
-    right: 10px !important;
+    right: 0px !important;
   }
 }
 .cv-header-text {
@@ -3290,11 +3290,12 @@ body.cv {
 }
 .cv-section-title {
   color: #bb1e1e;
-  font-size: 24px;
-  font-weight: 300;
-  padding-left: 21.5%;
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 17.5%;
   margin-bottom: 15px;
   page-break-after: avoid;
+  text-transform: uppercase;
 }
 .cv-tech-tags a,
 .cv-tech-tags a:hover {
@@ -3310,7 +3311,7 @@ body.cv {
   }
 }
 .cv-section-content.cv-section-content--indented {
-  padding-left: 21.5%;
+  padding-left: 17.5%;
 }
 @media screen and (max-width: 767px) {
   .cv-section-content.cv-section-content--indented {
@@ -3431,7 +3432,11 @@ body.cv {
   transition: all 0.5s ease;
 }
 
-.pdf:hover .pdf-options {
+.pdf-toggle:hover + .pdf-options {
+  transform: translateX(0);
+  color: #fff;
+}
+.pdf-options:hover {
   transform: translateX(0);
   color: #fff;
 }
